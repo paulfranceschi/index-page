@@ -1,4 +1,4 @@
-<img align="right" width="35%" src="https://github.com/pilinu/okchakko-project/blob/main/logo/okchakko-project-logo.png">
+<img align="right" width="25%" src="https://github.com/pilinu/okchakko-project/blob/main/logo/okchakko-project-logo.png">
 
 # index_page
 The index page for the okchakko project's online translator
