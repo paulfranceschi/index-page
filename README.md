@@ -7,6 +7,8 @@ The aim of this project is to write a better index page for the okchakko transla
 The current index page is located at the following address:
 https://www.okchakko.com/translate/index.html
 
+This index page gives free access to the translation from French to Corsican, a language threatened with extinction.
+
 The current index page has several defects:
 - it is basic, rather crude in its design on a white background
 - the source-text and the destination-text should be aligned horizontally (like Google translate, apertium, etc.) and not vertically
