@@ -1,7 +1,7 @@
 <img align="right" width="25%" src="https://github.com/pilinu/okchakko-project/blob/main/logo/okchakko-project-logo.png">
 
 # index_page
-The index page for the okchakko project's online translator
+The aim of this project is to write a better index page for the okchakko translator project, under the MIT license.
 
 ## current url
 The current index page is located at the following address:
