@@ -39,13 +39,4 @@ With regard to endangered languages, priority pairs are the most wanted translat
 - Manx: (i) English-Manx
 - Munegascu: (i) French-Munegascu (ii) Italian-Munegascu (iii) English-Munegascu
 
-## conditions for a given endangered language to be a candidate for this project
-What are the conditions for a given endangered language to be a candidate for this project? Ideally, one should have:
-- a dictionary: some specialized lexicons are useful too
-- a list of locutions and their translation: to be more accurate what is needed are noun locutions, adjective locutions, adverbial locutions, verbal locutions and their translations in other language.
-- a detailed grammar (in any language): ideally, the grammar should be very detailed, mentioning notably irregular verbs, noun plurals, etc. Subjonctive, conditional tenses must also be accurately described.
-- in addition, elision rules, euphony rules, should also be described.
-- most importantly: a description of the main variants of the language and their differences. This is needed to handle the ‘variant problem’ : as an effect of diversity, endangered languages are often polynomic in nature and come with variants.
-
-But the target concerns all languages and these conditions can be met incrementally.
 
