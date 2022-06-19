@@ -46,20 +46,13 @@ $name = $input = $output = $target = $website = "";
    if (empty($_POST["input"])) {
 // the following line prevents the browser from parsing this as HTML.
 //    header('Content-Type: text/plain');
-// http://it.wikipedia.org/wiki/7978_Niknesterov	   
-// http://it.wikipedia.org/w/index.php?title=7978_Niknesterov&action=edit	   
 	$headers = get_headers('http://it.wikipedia.org/wiki/Speciale:PaginaCasuale', 1);
     $pagetitle = $headers[Location];	   	   
 	$pagetitle = str_replace('wiki/', '/w/index.php?title=', $pagetitle) . '&action=edit';
-//	echo $headers[Location] . ':' . $pagetitle;
 	$randompage = file_get_contents($pagetitle); // get random page from it wk.
-//  $randompage = htmlspecialchars(file_get_contents('http://it.wikipedia.org/w/index.php?title=Kalamassery&action=edit'));
-//  $randompage = readfile('https://it.wikipedia.org/wiki/Speciale:PaginaCasuale');
 	$textbegin = strpos($randompage, '"mw-ui-input">') + strlen('"mw-ui-input">'); // 'wpTextbox1');
 	$textend = strpos($randompage, "<div class='editOptions'>");
 	$randompage = substr($randompage, $textbegin, strlen($randompage)-$textend);
-//    $randompage = preg_replace("([\s\S]+wpTextbox1)", '', $randompage);
-//    $randompage = preg_replace("(<div class='editOptions'>[0-9a-zA-Z]*)", '', $randompage);	   
 	$input = $randompage;	   
     $website = "";
    } else {
@@ -67,18 +60,12 @@ $name = $input = $output = $target = $website = "";
      $source = test_input($_POST["source"]);	   	   
      if ($_POST["target"] <> $target) {
 	  $target = $_POST["target"];}
-//	  echo ':' . $target . ':';
-//	  if ($target == 'SAR') {include 'it-cos.php';}
-//	  else if ($target == 'CIS') {include 'it-coc.php';}}
-	  
-//    $post = array('action' => 'translate', 'input' => 'La maison est grande', 'target' => 'co-TAR', 'debug' => 'false');
     $post = array('action' => 'translate', 'input' => $input, 'target' => $target, 'debug' => 'false');
     $data = http_build_query($post);
     $context = stream_context_create(array('http' => array(
       'header' => "Content-type: application/x-www-form-urlencoded\r\n" . "X-API-Key: PHP-public-okk-22mPl8nTe4\r\n",
       'method' => "POST",
       'content' => $data)));
-//    $context = stream_context_create(array('http' => array('method' => 'POST', 'header' => "Content-type: application/x-www-form-urlencoded\r\nContent-Length: " . strlen($data) . "\r\n", 'content' => $data)));
     $output = file_get_contents('http://www.okchakko.com/api/V6/translate.php', FALSE, $context);
      // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
      if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
