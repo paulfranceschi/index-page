@@ -20,7 +20,7 @@ Your contributions are welcome. You can help this project by proposing a better 
 # General considerations
 
 ## project history
-This project was initiated by philosopher [Paul Franceschi](www.paulfranceschi.com) in November 2021. Its objective is to create a multi-lingual dictionary, especially dedicated to endangered languages. The base project is hosted under the [okchakko-project](https://github.com/okchakko-project/okchakko-project) name on github.
+This project was initiated by philosopher [Paul Franceschi](www.paulfranceschi.com) in June 2022. Its objective is to create a multi-lingual dictionary, especially dedicated to endangered languages. The base project is hosted under the [okchakko-project](https://github.com/okchakko-project/okchakko-project) name on github.
 
 ## project name
 The name 'okchakko' comes from the endangered choctaw language and refers to a pale green or blue: there is no word for 'blue' or 'green' in the choctaw language but only 'okchamali', which refers to a vivid green or blue, and 'okchakko', which designates a pale green or blue. This emphasises that the taxonomies of colour in human languages are not identical, and reflects the cognitive diversity that characterises them.
