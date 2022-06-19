@@ -5,14 +5,14 @@ The index page for the okchakko project's online translator
 
 ## current url
 The current index page can be tested at the following address:
-https://www.okchakko.com/translate/index.html
+https://www.okchakko.com/translate/index.php
 
 The current index page has several defects:
 - it is basic, rather crude in its design on a white background
 - the source-text and the destination-text should be aligned horizontally and not vertically (like Google translste, apertium, etc.)
 - 
 # How to contribute?
-You can contribute to the project by proposing a better index page that the current one of the okchakko project (a priori in php, html or/and javascript).
+You can contribute to the project by proposing a better index page that the current one of the okchakko project (a priori in php or/and javascript).
 
 # General considerations
 
