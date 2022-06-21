@@ -17,7 +17,7 @@ The current index page has several defects:
 The index page index.php will be published under the MIT license.
 
 # How to contribute?
-Your contributions are welcome. You can help this project by proposing a better index page that the current one of the okchakko project (a priori in php).
+Your contributions are welcome. You can help this project by proposing a better index page that the current one of the okchakko project (a priori the revision should concern the PHP part of the page code).
 
 # General considerations
 
