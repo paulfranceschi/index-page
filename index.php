@@ -30,7 +30,8 @@ Copyright (c) ockchakko.com
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
 
-<body>	
+<body>
+// beginning of PHP code
 <?php
 include 'it-cot.php';
 $pattern = "/([àèéìòùA-Za-z]+)/";
@@ -39,9 +40,6 @@ $COwlist = array();
 $COtypewlist = array();
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $input = $output = $target = $website = "";
-// $italiano = test_input($_POST["italiano"]);
-// $source = test_input($_POST["source"]);
-// $output = TranslateITxCO($italiano);
  if ($_SERVER["REQUEST_METHOD"] == "POST") {    
    if (empty($_POST["input"])) {
 // the following line prevents the browser from parsing this as HTML.
@@ -82,6 +80,7 @@ function test_input($data) {
 
 
 ?>
+// end of PHP code	
 </body>	
 	<body class="homepage">
 
