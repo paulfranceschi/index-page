@@ -42,18 +42,8 @@ $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $input = $output = $target = $website = "";
  if ($_SERVER["REQUEST_METHOD"] == "POST") {    
    if (empty($_POST["input"])) {
-// the following line prevents the browser from parsing this as HTML.
-//    header('Content-Type: text/plain');
-	$headers = get_headers('http://it.wikipedia.org/wiki/Speciale:PaginaCasuale', 1);
-    $pagetitle = $headers[Location];	   	   
-	$pagetitle = str_replace('wiki/', '/w/index.php?title=', $pagetitle) . '&action=edit';
-	$randompage = file_get_contents($pagetitle); // get random page from it wk.
-	$textbegin = strpos($randompage, '"mw-ui-input">') + strlen('"mw-ui-input">'); // 'wpTextbox1');
-	$textend = strpos($randompage, "<div class='editOptions'>");
-	$randompage = substr($randompage, $textbegin, strlen($randompage)-$textend);
-	$input = $randompage;	   
-    $website = "";
-   } else {
+   }
+   else {
      $input = test_input($_POST["input"]);
      $source = test_input($_POST["source"]);	   	   
      if ($_POST["target"] <> $target) {
@@ -61,7 +51,7 @@ $name = $input = $output = $target = $website = "";
     $post = array('action' => 'translate', 'input' => $input, 'target' => $target, 'debug' => 'false');
     $data = http_build_query($post);
     $context = stream_context_create(array('http' => array(
-      'header' => "Content-type: application/x-www-form-urlencoded\r\n" . "X-API-Key: PHP-public-okk-22mPl8nTe4\r\n",
+      'header' => "Content-type: application/x-www-form-urlencoded\r\n" . "X-API-Key: PHP-public-okk-xxxxxxxxx\r\n",
       'method' => "POST",
       'content' => $data)));
     $output = file_get_contents('http://www.okchakko.com/api/V6/translate.php', FALSE, $context);
