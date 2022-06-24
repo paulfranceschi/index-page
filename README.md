@@ -5,7 +5,7 @@ The aim of this project is to write a better index page for the okchakko transla
 
 ## current url
 The current index page is located at the following address:
-https://www.okchakko.com/translate/index.html
+https://www.okchakko.com/translate/index.php
 
 This index page gives free access to the translation from French to Corsican, a language threatened with extinction. This index page allows you to choose the source language and the destination language for the translation, then makes a call to the translation API.
 
