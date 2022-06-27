@@ -33,7 +33,6 @@ Copyright (c) ockchakko.com
 <body>
 // beginning of PHP code
 <?php
-include 'it-cot.php';
 $pattern = "/([àèéìòùA-Za-z]+)/";
 $ITwlist = array();
 $COwlist = array();
