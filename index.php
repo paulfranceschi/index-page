@@ -95,7 +95,7 @@ function test_input($data) {
 						<section>
 							<header>
 								<h2>OKCHAKKO.COM</h2>
-								<span class="byline">Traducia da u francesu à u corsu (sperimintali)</span>
+								<span class="byline">Translate from French to Corsican (experimental)</span>
 							</header>
 							<p></p>
 							
