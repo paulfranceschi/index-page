@@ -11,7 +11,7 @@ This index page gives free access to the translation from French to Corsican, a 
 
 The current index page has several defects:
 - it is basic, rather crude in its design on a white background
-- the source-text and the destination-text should be aligned horizontally (like Google translate, apertium, etc.) and not vertically
+- the source-text and the destination-text should be aligned horizontally (like Google translate, Deepl, Apertium, etc.) and not vertically
 
 ## license
 The index page index.php will be published under the MIT license.
